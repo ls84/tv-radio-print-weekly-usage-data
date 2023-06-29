@@ -1,8 +1,11 @@
 duckdb <<EOF
-ATTACH 'data.sqlite' AS source (TYPE SQLITE);
+LOAD sqlite;
+LOAD spatial;
+
+ATTACH 'db.sqlite' AS source (TYPE SQLITE);
 
 CREATE TEMPORARY TABLE merge (
-    year Date NOT NULL,
+    year VARCHAR NOT NULL,
     outlet VARCHAR NOT NULL,
     weekly_use_percentage FLOAT,
     at_least_3_days_percentage FLOAT
@@ -67,5 +70,6 @@ SELECT
 FROM "source"."2023";
 
 COPY merge TO 'merge.parquet';
+COPY merge TO 'merge.xlsx' WITH (FORMAT GDAL, DRIVER 'xlsx');
 
 EOF
