@@ -6,3 +6,17 @@ source/2023.csv filter=lfs diff=lfs merge=lfs -text
 source/2017.csv filter=lfs diff=lfs merge=lfs -text
 source/2018.csv filter=lfs diff=lfs merge=lfs -text
 db.sqlite filter=lfs diff=lfs merge=lfs -text
+source/hongkong-2023.csv filter=lfs diff=lfs merge=lfs -text
+source/taiwan-2021.csv filter=lfs diff=lfs merge=lfs -text
+source/taiwan-2022.csv filter=lfs diff=lfs merge=lfs -text
+source/hongkong-2017.csv filter=lfs diff=lfs merge=lfs -text
+source/hongkong-2018.csv filter=lfs diff=lfs merge=lfs -text
+source/hongkong-2019.csv filter=lfs diff=lfs merge=lfs -text
+source/taiwan-2018.csv filter=lfs diff=lfs merge=lfs -text
+source/hongkong-2021.csv filter=lfs diff=lfs merge=lfs -text
+source/taiwan-2020.csv filter=lfs diff=lfs merge=lfs -text
+source/taiwan-2023.csv filter=lfs diff=lfs merge=lfs -text
+source/hongkong-2020.csv filter=lfs diff=lfs merge=lfs -text
+source/hongkong-2022.csv filter=lfs diff=lfs merge=lfs -text
+source/taiwan-2017.csv filter=lfs diff=lfs merge=lfs -text
+source/taiwan-2019.csv filter=lfs diff=lfs merge=lfs -text
