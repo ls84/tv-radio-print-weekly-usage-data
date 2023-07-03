@@ -149,5 +149,5 @@ FROM "source"."hongkong_2023"
 ;
 
 COPY merge TO 'merge.parquet';
--- COPY merge TO 'merge.xlsx' WITH (FORMAT GDAL, DRIVER 'xlsx');
+COPY merge TO 'merge.xlsx' WITH (FORMAT GDAL, DRIVER 'xlsx');
 EOF
